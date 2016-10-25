@@ -1,0 +1,147 @@
+
+
+#Supportmenu a {
+
+    color: #000;
+
+    display: block;
+
+    float: right;
+
+    font-weight: normal;
+
+    line-height: 25px;
+
+    width: 100%;
+
+}
+#Supportmenu a:hover {
+
+    color: #fff;
+
+
+}
+#Supportmenu ul {
+
+    background: none repeat scroll 0 0 #EDEDED;
+
+    border: 1px solid #C0C0C0;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+    direction: rtl;
+
+    display: inline;
+
+    float: right;
+
+    list-style: none outside none;
+
+    margin: 5px 7px 0 0;
+
+    padding: 1px 2px 3px 0;
+
+    text-align: right;
+
+    width: 98%;
+
+}
+
+#Supportmenu ul li {
+
+    border-left: 1px solid #C0C0C0;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    line-height: 21px;
+
+    padding: 7px 20px;
+
+    position: relative;
+
+    transition: all 0.2s ease 0s;
+
+}
+
+#Supportmenu ul li:hover {
+
+    background: none repeat scroll 0 0 #555555;
+
+    color: #FFFFFF;
+
+}
+
+#Supportmenu ul li ul {
+
+    border: medium none;
+
+    box-shadow: none;
+
+    display: none;
+
+    font-family: BYekan;
+
+    opacity: 0;
+
+    padding: 0;
+
+    position: absolute;
+
+    right: -7px;
+
+    top: 29px;
+
+    transition: opacity 0.2s ease 0s;
+
+    visibility: hidden;
+
+    width: 220px;
+
+    z-index: 1000;
+
+}
+
+#Supportmenu ul li ul li {
+
+    background: none repeat scroll 0 0 #555555;
+
+    border-bottom: 1px solid #666666;
+
+    border-top: medium none;
+
+    color: #FFFFFF;
+
+    display: block;
+
+    height: 25px;
+
+    text-shadow: 0 -1px 0 #000000;
+
+}
+
+#Supportmenu ul li ul li:hover {
+
+    background: none repeat scroll 0 0 #666666;
+
+}
+
+#Supportmenu ul li:hover ul {
+
+    display: block;
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+#Supportmenu {
+
+    float: right;
+
+    width: 100%;
+
+}
+

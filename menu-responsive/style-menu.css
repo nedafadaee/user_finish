@@ -1,0 +1,108 @@
+
+body .dropdown li {
+    border-right: medium none !important;
+    float: none !important;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: right;
+}
+.dropdown {
+    z-index: 1 !important;
+}
+.dropdown:hover {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-top-right-radius: 15px;
+    z-index: 1;
+}
+.dropdown ul {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    border-bottom-left-radius: 15px;
+    border-left: 1px solid rgb(204, 204, 204);
+    border-right: 1px solid rgb(204, 204, 204);
+    height: auto;
+    left: -1px;
+    overflow: visible !important;
+    position: absolute;
+    right: -1px !important;
+    top: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.dropdown ul li {
+    padding-left: 1px !important;
+    word-break: break-all;
+}
+.dropdown ul li a {
+    font-size: 12px;
+}
+.i-list::before {
+    color: rgb(204, 204, 204);
+    content: "";
+    font-family: icon;
+    font-size: 10px;
+    padding-left: 2px;
+}
+.dropdown:hover ul {
+    top: 40px;
+    transition: all 0.5s ease 0.2s;
+    visibility: visible;
+    z-index: -1;
+}
+.dropdown li:hover a {
+    color: rgb(34, 34, 34);
+}
+.icon-bar::before {
+    border: 1px solid #622D7A;
+    border-radius: 5px;
+    color: rgb(98, 45, 122);
+    content: "";
+    font-family: "icon";
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 5px;
+}
+.drop {
+    list-style: outside none none;
+}
+.add::before {
+    color: rgb(98, 45, 122);
+    content: "";
+    font-family: "icon";
+    font-size: 20px;
+    left: 20px;
+    position: absolute;
+    top: 18px;
+    z-index: 10000;
+}
+.menu-responsive {
+    margin-top: 15px;
+    position: relative;
+}
+.drop ul {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border: 1px solid rgb(98, 45, 122);
+    border-radius: 10px;
+    display: none;
+    font-size: 13px;
+    height: auto;
+    left: 0;
+    list-style: outside none none;
+    min-width: 70vw !important;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0 !important;
+    padding-top: 10px;
+    position: absolute;
+    top: 35px;
+    z-index: 1000 !important;
+}
+.drop ul li a {
+    color: rgb(102, 102, 102);
+    line-height: 30px;
+    padding-right: 10px;
+}
+.drop ul li:hover a {
+    color: #622D7A;
+}

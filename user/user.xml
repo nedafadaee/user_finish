@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<body>  
+ <title>کاربران</title>     
+ <folder title='مدیریت کاربران'  view='list' page='user'  />
+</body>
