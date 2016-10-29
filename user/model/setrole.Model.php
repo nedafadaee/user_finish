@@ -19,7 +19,7 @@
 		  exit;
 	}
 	function GetAllUsers(){
-		 parent::query("SELECT * FROM user left join UserHistory on UserHistory.user_id = user.id
+		 parent::query("SELECT user.* FROM user left join UserHistory on UserHistory.user_id = user.id
 		 where UserHistory.isdelete !='1'");
          return  parent::LoadResult(); 
 	}

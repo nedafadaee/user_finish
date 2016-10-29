@@ -20,20 +20,24 @@
    echo "<a href=\"".$db->SITE_URL."api/report/report.xls\">دریافت فایل خروجی اکسل</a>";
 ?>
 <form action="" method="post"  class="form-horizontal bg-form">
- <div class="form-group">
+<div class="form-group">
       
       <div class="col-md-3">
         <input id="txt_search" name="txt_search" type="text" placeholder="کاربر را جستجو کنید" class="form-control">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
         <input type="submit" name="btn_search" id="btn_search" value="جستجو"  class="btn btn-primary showicon">
       </div>
       
       <div class="col-md-3">
         <input id="txt_club" name="txt_club" type="text" placeholder="باشگاه را جستجو کنید" class="form-control">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
         <input type="submit" name="btn_club" id="btn_club" value="جستجو"  class="btn btn-primary showicon" />
+      </div>
+       <div class="col-md-2">
+        <a name="btnadvancesearch"  class="btn btn-primary showicon" 
+        href="?page=user&view=search&action=list">جستجوی پیشرفته </a>
       </div>
  </div>
 

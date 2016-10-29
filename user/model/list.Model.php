@@ -156,7 +156,8 @@ class model extends db{
         }
     }
     function Get_sarparast(){
-        parent::query("select id, name,familly from user where marketer='1' ");
+        parent::query("select user.id, user.name,user.familly from user left join UserHistory on UserHistory.user_id = user.id
+		 where UserHistory.isdelete !='1' and user.marketer='1' ");
         return parent::LoadResult();
     }
     function Get_besiness(){
@@ -377,8 +378,10 @@ class model extends db{
 	}
     function CheckDuplicateMobile($mobile=''){
         if(isset($mobile)){
-            $select = parent::query("SELECT * FROM user WHERE  mobile  = '$mobile'
-            and id !='".$this->contentId."' ");
+            $select = parent::query("SELECT user.* FROM user 
+			left join UserHistory on UserHistory.user_id = user.id 
+			WHERE  UserHistory.isdelete !='1' and user.mobile  = '$mobile'
+            and user.id !='".$this->contentId."' ");
             if(mysql_num_rows($select) == 0 ){
                 return true;
             }

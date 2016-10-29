@@ -37,7 +37,7 @@ function loadDist(){
 $(document).ready(function(e) {
        loadCity();
 	   url = $("#ListProv").attr('aria-api')+'/api/shop/city.php';
-       cityid = $("#ListProv").attr('aria-city').val();
+       cityid = $("#ListProv").attr('aria-city');
        $.post(url,{provance:val,select:cityid},function succ(data){
             $("#listCity").html(data)
         })
